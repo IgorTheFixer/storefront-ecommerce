@@ -4,7 +4,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 
-import Button from "@/components/ui/Button";
+import MyButton from "@/components/ui/MyButton";
 import Currency from "@/components/ui/Currency";
 import useCart from "@/hooks/useCart";
 import { toast } from "react-hot-toast";
@@ -50,9 +50,9 @@ const Summary = () => {
          <Currency value={totalPrice} />
         </div>
       </div>
-      <Button onClick={onCheckout} disabled={items.length === 0} className="w-full mt-6">
+      <MyButton onClick={onCheckout} disabled={items.length === 0} className="w-full mt-6">
         Checkout
-      </Button>
+      </MyButton>
     </div>
   );
 }

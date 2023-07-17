@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
+const MyButton = forwardRef<HTMLButtonElement, ButtonProps>(({
   className,
   children,
   disabled,
@@ -43,6 +43,6 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
   );
 });
 
-Button.displayName = "Button";
+MyButton.displayName = "Custom Button";
 
-export default Button;
+export default MyButton;
